@@ -31,7 +31,7 @@ class Day03MinefieldTest extends \PHPUnit_Framework_TestCase
 	 */
 	public function testColsRowsException()
 	{
-		$this->setExpectedException('\Exception', "First line must contain 2 integers, greater than 0: cols rows");
+		$this->setExpectedException('\Exception', "First line must contain 2 integers, greater than 0: rows cols");
 
 		$fieldString = "3
 *...
@@ -48,7 +48,7 @@ class Day03MinefieldTest extends \PHPUnit_Framework_TestCase
 	 */
 	public function testStringsException()
 	{
-		$this->setExpectedException('\Exception', "First line must contain 2 integers, greater than 0: cols rows");
+		$this->setExpectedException('\Exception', "First line must contain 2 integers, greater than 0: rows cols");
 
 		$fieldString = "*...
 ..*.

@@ -35,7 +35,7 @@ class Day03Minefield
 
 		if (count($dimensions) != 2 || !is_numeric($dimensions[0]) || !is_numeric($dimensions[1]) || $dimensions[0] == 0 || $dimensions[1] == 0)
 		{
-			throw new \Exception("First line must contain 2 integers, greater than 0: cols rows");
+			throw new \Exception("First line must contain 2 integers, greater than 0: rows cols");
 		}
 
 		//get rid of the dimensions
